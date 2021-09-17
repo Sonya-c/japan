@@ -1,9 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
 
+$max-with: 800px;
+$background: #EEEBDD;
+
 body, html {
     margin: 0;
     padding: 0;
     font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-seri;
+    background-color: $background;
+
+    hr {
+        overflow: visible; /* For IE */
+        padding: 0;
+        border: none;
+        border-top: medium double #333;
+        color: #333;
+        text-align: center;
+        max-width: $max-with;
+    }
+
+    hr:after {
+        content: "§";
+        display: inline-block;
+        position: relative;
+        top: -0.7em;
+        font-size: 1.5em;
+        padding: 0 0.25em;
+        background: $background;
+    }
+
+
 
     header {
         text-align: center;
@@ -13,44 +39,26 @@ body, html {
             font-family: 'Ma Shan Zheng', cursive;
             font-size: xxx-large;
 
-            a {
-                text-decoration: none;
+            
+        }
+    
+        a {
+            text-decoration: none;
             color: black;
-            }
-        }
-    
-        hr {
-            overflow: visible; /* For IE */
-            padding: 0;
-            border: none;
-            border-top: medium double #333;
-            color: #333;
-            text-align: center;
-            max-width: 500px;
-        }
-    
-        hr:after {
-            content: "§";
-            display: inline-block;
-            position: relative;
-            top: -0.7em;
-            font-size: 1.5em;
-            padding: 0 0.25em;
-            background: white;
         }
     }
     
     main {
-        max-width: 500px;
-        min-height: 80vh;
+        max-width: $max-with;
         margin: auto;
+        padding: 10px;
+        box-sizing: border-box;
     }
     
     footer {
-        bottom:0;
-        width:100%;
-        background:black;
-        color: white;
+        text-align: center;
+        max-width:$max-with;
+        margin: auto;
         padding: 10px;
         box-sizing: border-box;
     }
@@ -59,6 +67,11 @@ body, html {
         list-style-type: none;
         margin: 0;
         padding: 0;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
 
         .post {
             a {

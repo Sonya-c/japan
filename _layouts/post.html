@@ -12,9 +12,8 @@
 <body>
     {% include header.html %}
     
-    
-    
     <main>
+        <p style="text-align: center;">{{ page.date | date: '%B %d, %Y' }}</p>
         <img src="{{ page.banner}} " alt=" {{page.title}} ">
         {{ content }}
     </main>

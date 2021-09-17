@@ -1,5 +1,6 @@
 ---
-title: subculture
+title: Subculture
+layout: post
 ---
 
 # Subculture
