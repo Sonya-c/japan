@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-seri;
+
+    header {
+        text-align: center;
+    
+        h1 {
+            margin: 0;
+            font-family: 'Ma Shan Zheng', cursive;
+            font-size: xxx-large;
+
+            a {
+                text-decoration: none;
+            color: black;
+            }
+        }
+    
+        hr {
+            overflow: visible; /* For IE */
+            padding: 0;
+            border: none;
+            border-top: medium double #333;
+            color: #333;
+            text-align: center;
+            max-width: 500px;
+        }
+    
+        hr:after {
+            content: "§";
+            display: inline-block;
+            position: relative;
+            top: -0.7em;
+            font-size: 1.5em;
+            padding: 0 0.25em;
+            background: white;
+        }
+    }
+    
+    main {
+        max-width: 500px;
+        min-height: 80vh;
+        margin: auto;
+    }
+    
+    footer {
+        bottom:0;
+        width:100%;
+        background:black;
+        color: white;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .posts-index{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        .post {
+            a {
+                display: block;
+            }
+            max-width: 100%;
+            border: 1px #333 solid;
+            padding: 10px;
+            margin: 10px 0 10px 0;
+        }
+    }
+}
