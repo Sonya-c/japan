@@ -13,10 +13,15 @@
     {% include header.html %}
     
     <main>
-        <p style="text-align: center;">{{ page.date | date: '%B %d, %Y' }}</p>
-        <img src="{{ page.banner}} " alt=" {{page.title}} ">
+        
+        <img src="{{ site.baseurl }}/assets/img/{{ page.banner}}" alt=" {{page.title}} ">
+        <p>{{ page.date | date: '%B %d, %Y' }}</p>
         {{ content }}
+
+        {% include pagination.html %}
     </main>
+
+    
 
     {% include footer.html %}
 
