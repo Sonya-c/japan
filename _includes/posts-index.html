@@ -1,7 +1,7 @@
 <ul class="posts-index">
     {% for post in site.posts reversed %}
       <li  class="post">
-        <a href="{{ post.url }}">
+        <a href="{{ site.baseurl }}/{{ post.url }}">
           <h2>{{ post.title }}</h2>
           <p>{{ post.date | date: '%B %d, %Y' }}</p>
           <img src="{{ site.baseurl }}/assets/img/{{ post.banner}}" alt="post.title">
