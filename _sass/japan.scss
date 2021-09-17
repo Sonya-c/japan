@@ -21,6 +21,8 @@ body, html {
     }
 
     img {
+        margin: auto;
+        min-width: 100%;
         max-width: 100%;
     }
     hr:after {
