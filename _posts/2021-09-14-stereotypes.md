@@ -1,6 +1,6 @@
 ---
-title: Stereotypes
+title: "Stereotypes: the danger of a single story"
 layout: post
 ---
 
-# Stereotypes
+# Stereotypes: the danger of a single story
